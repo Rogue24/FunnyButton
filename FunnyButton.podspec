@@ -21,4 +21,5 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/Rogue24/FunnyButton.git', :tag => s.version.to_s }
   s.ios.deployment_target = '12.0'
   s.source_files = 'FunnyButton/Classes/**/*'
+  s.swift_version = '5.0'
 end
