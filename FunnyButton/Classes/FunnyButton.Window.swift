@@ -39,6 +39,10 @@ internal extension FunnyButton {
             return nil
         }
         
+        override var canBecomeKey: Bool { false }
+        
+        override var isKeyWindow: Bool { false }
+        
         func show() { isHidden = false }
         
         func hide() { isHidden = true }
@@ -55,6 +59,12 @@ private extension FunnyButton.FunWindow {
         override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
             DispatchQueue.main.async { self.updateFunnyLayout() }
         }
+        
+        override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+            FunnyButton.orientationMask ?? super.supportedInterfaceOrientations
+        }
+        
+        override var shouldAutorotate: Bool { true }
     }
 }
 

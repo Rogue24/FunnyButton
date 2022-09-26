@@ -6,16 +6,16 @@
 //
 
 public class FunnyButton: UIButton {
-    static let shared = FunnyButton()
+    public static let shared = FunnyButton()
     
     /// 普通状态
-    static var normalEmoji = "😛"
+    public static var normalEmoji = "😛"
     
     /// 点击状态
-    static var touchingEmoji = "😝"
+    public static var touchingEmoji = "😝"
     
     /// 毛玻璃样式（nil为无毛玻璃）
-    static var effect: UIVisualEffect? = {
+    public static var effect: UIVisualEffect? = {
         if #available(iOS 13, *) {
             return UIBlurEffect(style: .systemThinMaterial)
         }
@@ -23,16 +23,20 @@ public class FunnyButton: UIButton {
     }()
     
     /// 背景色
-    static var bgColor: UIColor? = UIColor(red: 200.0 / 255.0, green: 100.0 / 255.0, blue: 100.0 / 255.0, alpha: 0.2)
+    public static var bgColor: UIColor? = UIColor(red: 200.0 / 255.0, green: 100.0 / 255.0, blue: 100.0 / 255.0, alpha: 0.2)
     
     /// 初始点（想`靠右/靠下`的话，`x/y`的值就设置大一点，最后会靠在安全区域的边上）
-    static var startPoint: CGPoint = CGPoint(x: 600, y: 100)
+    public static var startPoint: CGPoint = CGPoint(x: 600, y: 100)
     
     /// 安全区域的边距
-    static var safeMargin: CGFloat = 12
+    public static var safeMargin: CGFloat = 12
+    
+    /// 自定义可支持的屏幕方向（nil为系统默认）
+    public static var orientationMask: UIInterfaceOrientationMask? = nil
+    
     
     /// 点击`Action`（单个直接执行，多个则弹出系统Sheet选择执行）
-    var actions: [FunnyAction]?
+    public var actions: [FunnyAction]?
     
     
     private var _safeFrame: CGRect = .zero

@@ -60,7 +60,7 @@ override func viewWillDisappear(_ animated: Bool) {
 
 ## API
 
-`FunnyButton.Window.swift` - 公开可使用接口。
+`FunnyButton.API.swift` - 公开可使用接口。
 
 - replace action - 替换、覆盖全部事件
 ```swift
