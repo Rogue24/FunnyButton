@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FunnyButton'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'Convenient debugging button'
 
   s.description      = <<-DESC
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Rogue24' => 'zhoujianping24@hotmail.com' }
   s.source           = { :git => 'https://github.com/Rogue24/FunnyButton.git', :tag => s.version.to_s }
-  s.ios.deployment_target = '12.0'
+  s.ios.deployment_target = '11.0'
   s.source_files = 'FunnyButton/Classes/**/*'
   s.swift_version = '5.0'
 end

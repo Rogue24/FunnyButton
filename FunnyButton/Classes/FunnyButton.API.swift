@@ -28,6 +28,13 @@ public extension FunnyButton {
 #endif
     }
     
+    /// 替换单个`Action`
+    static func replaceAction(_ work: @escaping () -> ()) {
+#if DEBUG
+        replaceActions([FunnyAction(work: work)])
+#endif
+    }
+    
     /// 替换所有`Action`
     static func replaceActions(_ actions: [FunnyAction]?) {
 #if DEBUG
@@ -62,11 +69,11 @@ public extension NSObject {
     /// 替换单个`Action`
     @objc func replaceFunnyAction(work: @escaping () -> ()) {
 #if DEBUG
-        FunnyButton.replaceActions([FunnyAction(work: work)])
+        FunnyButton.replaceAction(work)
 #endif
     }
     
-    /// 替换多个`Action`
+    /// 替换所有`Action`
     @objc func replaceFunnyActions(_ actions: [FunnyAction]) {
 #if DEBUG
         FunnyButton.replaceActions(actions)

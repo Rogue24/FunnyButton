@@ -1,5 +1,5 @@
 PODS:
-  - FunnyButton (0.1.1)
+  - FunnyButton (0.1.2)
 
 DEPENDENCIES:
   - FunnyButton (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FunnyButton: 104415be8a07ed9d5ab4ad5ea82a6029dfc7bb87
+  FunnyButton: 980633cee38018dff1bc4f12322ba4c7e353e3bf
 
-PODFILE CHECKSUM: 19a509040fa5086dd042eee7ffae53fe41832f8f
+PODFILE CHECKSUM: ff9c607c876596be4684b82107b5dbc717d5c16d
 
 COCOAPODS: 1.11.3
