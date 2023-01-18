@@ -41,18 +41,18 @@
 		6E444EC94A39A714BBAA90283F907389 /* FunnyButton */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FunnyButton; path = FunnyButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7AEBE9259F632901EE3212E3A058838C /* FunnyButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FunnyButton-umbrella.h"; sourceTree = "<group>"; };
-		816F94DF05C55ACD6528AAF7897594CF /* FunnyButton.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FunnyButton.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		816F94DF05C55ACD6528AAF7897594CF /* FunnyButton.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = FunnyButton.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		85164A800EBB26D803B2F5CEA46EDA6B /* FunnyAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FunnyAction.swift; path = FunnyButton/Classes/FunnyAction.swift; sourceTree = "<group>"; };
 		938ADEA219118885573660E133FDEEF3 /* FunnyButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FunnyButton-dummy.m"; sourceTree = "<group>"; };
 		9432E9D12A942583857CF8FB5617D673 /* Pods-FunnyButton_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FunnyButton_Example.modulemap"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A43A1A7ED1B3E149012B8D179BECA039 /* Pods-FunnyButton_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FunnyButton_Example-frameworks.sh"; sourceTree = "<group>"; };
 		A5A7F167204E1EE968277B0E6DFB0745 /* FunnyButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FunnyButton-prefix.pch"; sourceTree = "<group>"; };
 		A720867D502BFAF0C3603BE043FB4DB4 /* Pods-FunnyButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FunnyButton_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AAF7713FFD0720A41B290B16B5974D2E /* Pods-FunnyButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FunnyButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B523679268B61ECBB262E4289DB761A5 /* Pods-FunnyButton_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FunnyButton_Example"; path = Pods_FunnyButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC9057D8C3AEB06B570633AE54347C1B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		BDBDD0258E8C82206189E5FCCBCAEF51 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		BC9057D8C3AEB06B570633AE54347C1B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BDBDD0258E8C82206189E5FCCBCAEF51 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D83CFA5471A082984A3F6C5416075916 /* FunnyButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FunnyButton.debug.xcconfig; sourceTree = "<group>"; };
 		DFAABD696232ED61624AA0DA811B9857 /* Pods-FunnyButton_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FunnyButton_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EE79C05E05D19F778475394944C532A9 /* Pods-FunnyButton_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FunnyButton_Example-dummy.m"; sourceTree = "<group>"; };
@@ -126,10 +126,10 @@
 		81DF0EC48148F4A6E2314EFC05474AD8 /* FunnyButton */ = {
 			isa = PBXGroup;
 			children = (
-				85164A800EBB26D803B2F5CEA46EDA6B /* FunnyAction.swift */,
-				4F59B4B95EC8B466ADE52708451D1A80 /* FunnyButton.swift */,
 				2D84B528121758EFE09A4D1331027EB9 /* FunnyButton.API.swift */,
+				4F59B4B95EC8B466ADE52708451D1A80 /* FunnyButton.swift */,
 				386A960296E22303D8A9C5DE724B5097 /* FunnyButton.Window.swift */,
+				85164A800EBB26D803B2F5CEA46EDA6B /* FunnyAction.swift */,
 				1EB6DF4EA244170EA3A522B682A45E79 /* Pod */,
 				88D204C8D50AEFF88D78F54084A0BED2 /* Support Files */,
 			);
@@ -447,8 +447,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
