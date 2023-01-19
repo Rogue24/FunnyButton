@@ -12,7 +12,7 @@
         ✅ 兼容Objective-C环境调试；
         ✅ 仅限DEBUG环境；
         ✅ API简单易用。
-        
+
 `SwiftUI`版本：[FunnyButton_SwiftUI](https://github.com/Rogue24/FunnyButton_SwiftUI)
 
 ## Effect
