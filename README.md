@@ -17,6 +17,15 @@
         
 `SwiftUI`版本：[FunnyButton_SwiftUI](https://github.com/Rogue24/FunnyButton_SwiftUI)
 
+## Effect
+- 单个调试事件
+
+![single_action](https://github.com/Rogue24/JPCover/raw/master/FunnyButton_SwiftUI/single_action.gif)
+
+- 多个调试事件
+
+![multiple_actions](https://github.com/Rogue24/JPCover/raw/master/FunnyButton_SwiftUI/multiple_actions.gif)
+
 ## Basic use
 
 为了兼容OC，基于`NSObject`的扩展提供给所有基类设置调试事件的接口，以`UIViewController`为例：
