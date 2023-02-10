@@ -8,9 +8,8 @@
         ✅ 位于Window层级，不会被app内的界面覆盖；
         ✅ 自适应安全区域，自动靠边，适配横竖屏；
         ✅ 可执行单个/多个调试事件；
-        ✅ 兼容iPhone&iPad；
+        ✅ 兼容`iPhone`&`iPad`；
         ✅ 兼容Objective-C环境调试；
-        ✅ 仅限DEBUG环境；
         ✅ API简单易用。
 
 `SwiftUI`版本：[FunnyButton_SwiftUI](https://github.com/Rogue24/FunnyButton_SwiftUI)
@@ -156,7 +155,7 @@ FunnyButton is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'FunnyButton'
+pod 'FunnyButton', :configurations => ['Debug']
 ```
 
 ## Author
