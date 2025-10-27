@@ -10,6 +10,7 @@
         ✅ 可执行单个/多个调试事件；
         ✅ 兼容`iPhone`&`iPad`；
         ✅ 兼容Objective-C环境调试；
+        ✅ 可以不参与截屏和录屏；
         ✅ API简单易用。
 
 `SwiftUI`版本：[FunnyButton_SwiftUI](https://github.com/Rogue24/FunnyButton_SwiftUI)

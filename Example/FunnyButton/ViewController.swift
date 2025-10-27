@@ -13,8 +13,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        FunnyButton.shared
-        
         // 不让 FunnyButton 参与截屏和录屏
         FunnyButton.isScreenCaptureAllowed = false
         
