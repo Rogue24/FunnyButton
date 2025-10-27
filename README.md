@@ -69,7 +69,7 @@ override func viewWillDisappear(_ animated: Bool) {
 
 ## API
 
-`FunnyButton.API.swift` - 公开可使用接口。
+`FunnyButton+API.swift` - 公开可使用接口。
 
 - replace action - 替换、覆盖全部事件
 ```swift
@@ -112,14 +112,23 @@ override func viewWillDisappear(_ animated: Bool) {
 public class FunnyButton: UIButton {
     ......
     
+    /// 初始点（想`靠右/靠下`的话，`x/y`的值就设置大一点，最后会靠在安全区域的边上）
+    static var startPoint: CGPoint = CGPoint(x: 600, y: 100)
+    
+    /// 安全区域的边距
+    static var safeMargin: CGFloat = 12
+    
+    /// 是否允许截屏和录屏
+    public static var isScreenCaptureAllowed: Bool = true
+    
     /// 普通状态
-    static var normalEmoji = "😛"
+    public var normalEmoji = "😛"
     
     /// 点击状态
-    static var touchingEmoji = "😝"
+    public var touchingEmoji = "😝"
     
     /// 毛玻璃样式（nil为无毛玻璃）
-    static var effect: UIVisualEffect? = {
+    public var effect: UIVisualEffect? = {
         if #available(iOS 13, *) {
             return UIBlurEffect(style: .systemThinMaterial)
         }
@@ -127,13 +136,7 @@ public class FunnyButton: UIButton {
     }()
     
     /// 背景色
-    static var bgColor: UIColor? = UIColor(red: 200.0 / 255.0, green: 100.0 / 255.0, blue: 100.0 / 255.0, alpha: 0.2)
-    
-    /// 初始点（想`靠右/靠下`的话，`x/y`的值就设置大一点，最后会靠在安全区域的边上）
-    static var startPoint: CGPoint = CGPoint(x: 600, y: 100)
-    
-    /// 安全区域的边距
-    static var safeMargin: CGFloat = 12
+    public var bgColor: UIColor? = UIColor(red: 200.0 / 255.0, green: 100.0 / 255.0, blue: 100.0 / 255.0, alpha: 0.2)
     
     ......
 }
@@ -142,8 +145,11 @@ public class FunnyButton: UIButton {
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     ......
     
-    FunnyButton.normalEmoji = "🦖"
-    FunnyButton.touchingEmoji = "🐲"
+    // 不让 FunnyButton 参与截屏和录屏
+    FunnyButton.isScreenCaptureAllowed = false
+    
+    FunnyButton.shared.normalEmoji = "🦖"
+    FunnyButton.shared.touchingEmoji = "🐲"
 
     return true
 }
