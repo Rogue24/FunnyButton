@@ -1,6 +1,6 @@
 {
   "name": "FunnyButton",
-  "version": "0.1.2",
+  "version": "0.1.6",
   "summary": "Convenient debugging button",
   "description": "Convenient debugging button.",
   "homepage": "https://github.com/Rogue24/FunnyButton",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Rogue24/FunnyButton.git",
-    "tag": "0.1.2"
+    "tag": "0.1.6"
   },
   "platforms": {
     "ios": "11.0"

@@ -12,53 +12,47 @@ import FunnyButton
 class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Hello"
         
+        // 不让 FunnyButton 参与截屏和录屏
+        FunnyButton.isScreenCaptureAllowed = false
+        
+        title = "Hello"
         view.backgroundColor = .systemTeal
         
-        let btn1: UIButton = {
-            let btn = UIButton(type: .system)
-            btn.titleLabel?.font = .systemFont(ofSize: 18, weight: .bold)
-            btn.setTitle("基本使用", for: .normal)
-            btn.setTitleColor(.orange, for: .normal)
-            btn.backgroundColor = .systemYellow
-            btn.layer.cornerRadius = 8
-            btn.layer.masksToBounds = true
-            btn.frame = CGRect(x: 50, y: 300, width: 100, height: 35)
-            btn.addTarget(self, action: #selector(didClickBtn1), for: .touchUpInside)
-            return btn
-        }()
+        let btn1 = buildBtn("基本使用", .systemPink, .systemYellow, 200, #selector(didClickBtn1))
         view.addSubview(btn1)
         
-        let btn2: UIButton = {
-            let btn = UIButton(type: .system)
-            btn.titleLabel?.font = .systemFont(ofSize: 18, weight: .bold)
-            btn.setTitle("兼容OC", for: .normal)
-            btn.setTitleColor(.systemBlue, for: .normal)
-            btn.backgroundColor = .systemYellow
-            btn.layer.cornerRadius = 8
-            btn.layer.masksToBounds = true
-            btn.frame = CGRect(x: 50, y: 350, width: 100, height: 35)
-            btn.addTarget(self, action: #selector(didClickBtn2), for: .touchUpInside)
-            return btn
-        }()
+        let btn2 = buildBtn("兼容OC", .systemBlue, .systemYellow, 250, #selector(didClickBtn2))
         view.addSubview(btn2)
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        replaceFunnyAction {
-            print("点我干森莫")
+        
+        removeFunnyActions()
+        addFunnyAction(name: "基本使用") { [weak self] in
+            self?.didClickBtn1()
+        }
+        addFunnyAction(name: "兼容OC") { [weak self] in
+            self?.didClickBtn2()
         }
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        removeFunnyActions()
+    private func buildBtn(_ title: String, _ titleColor: UIColor, _ bgColor: UIColor, _ y: CGFloat, _ action: Selector) -> UIButton {
+        let btn = UIButton(type: .system)
+        btn.titleLabel?.font = .systemFont(ofSize: 18, weight: .bold)
+        btn.setTitle(title, for: .normal)
+        btn.setTitleColor(titleColor, for: .normal)
+        btn.backgroundColor = bgColor
+        btn.layer.cornerRadius = 8
+        btn.layer.masksToBounds = true
+        btn.frame = CGRect(x: 50, y: y, width: 100, height: 35)
+        btn.addTarget(self, action: action, for: .touchUpInside)
+        return btn
     }
 }
 
-extension ViewController {
+private extension ViewController {
     @objc func didClickBtn1() {
         navigationController?.pushViewController(JPViewController(), animated: true)
     }

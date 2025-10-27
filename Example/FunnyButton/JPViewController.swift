@@ -16,7 +16,7 @@ class JPViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "基本使用"
-        view.backgroundColor = .darkGray
+        view.backgroundColor = .systemPink
         view.addSubview(box)
     }
 
@@ -25,15 +25,10 @@ class JPViewController: UIViewController {
         
         box.updateSafeFrame()
         
-        addFunnyAction { [weak self] in
+        replaceFunnyAction { [weak self] in
             guard let self = self else { return }
             print("box.frame --- \(self.box.frame)")
         }
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        removeFunnyActions()
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {

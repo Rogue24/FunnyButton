@@ -5,14 +5,16 @@
 //  Created by aa on 2022/9/17.
 //
 //  公开接口
+//
 
 public extension FunnyButton {
     /// 刷新`FunnyButton`布局
     static func updateLayout() {
-        let isOnWindow = shared.superview == FunWindow.shared
-        FunWindow.shared.show()
+        let myWindow = FunWindow.shared
+        let isOnWindow = shared.superview == myWindow
+        myWindow.show()
         if !isOnWindow {
-            FunWindow.shared.addSubview(shared)
+            myWindow.addSubview(shared)
         }
         shared.updateSafeFrame()
         shared.moveToBorder(animated: isOnWindow)

@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02E37506E4193511100E310B4C908AB6 /* FunnyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F59B4B95EC8B466ADE52708451D1A80 /* FunnyButton.swift */; };
-		3D2324438D9433AEF5F348E0CFB7A718 /* FunnyButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 938ADEA219118885573660E133FDEEF3 /* FunnyButton-dummy.m */; };
+		0D3D8777F254DC22FFB99F4905702E48 /* FunnyAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6980212E1EA3A7DA966FF775A0C68E /* FunnyAction.swift */; };
 		440B773A95D19EE5873E3CE67C1CB9F3 /* Pods-FunnyButton_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE79C05E05D19F778475394944C532A9 /* Pods-FunnyButton_Example-dummy.m */; };
 		495B109EBED1AB7BBF70E92B0B23C5B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		5186582D1F196B466E824668D4B53558 /* FunnyButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AEBE9259F632901EE3212E3A058838C /* FunnyButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9B0EE6AD27EEC9783922F8C3F8F17338 /* FunnyAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85164A800EBB26D803B2F5CEA46EDA6B /* FunnyAction.swift */; };
+		5186582D1F196B466E824668D4B53558 /* FunnyButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D3509FA29D0ECDC62F49F0AFC7CEE594 /* FunnyButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C443CABA1EACD0DE7E352CA2D6DD581 /* FunnyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF96741BE5D7F3BA2ECB2556F381FA /* FunnyButton.swift */; };
+		9DF26D082B2EFD8AB0AD895CE64A883F /* FunnyButton+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3B7220608A5492B19BF6DADFB49FFA /* FunnyButton+API.swift */; };
+		B668501245D08DE20160C784401A3056 /* FunnyButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4721AD68E929DA834A8C25BAAC4B0F /* FunnyButton-dummy.m */; };
 		BB70979BBA92118686C718DB057B24E7 /* Pods-FunnyButton_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 34CEF15F37F4AEE28B7D7E6744C2483B /* Pods-FunnyButton_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC25125B5E273368135CCF22CAB9D600 /* FunnyButton.Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386A960296E22303D8A9C5DE724B5097 /* FunnyButton.Window.swift */; };
+		C31334505876CBFF3011F43ECBE651D9 /* FunnyButton+Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4228F95404AF35999EC3CC66B02B8214 /* FunnyButton+Window.swift */; };
 		E2D5752826944D35A69F24825716B1F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		F3E1765676001F390103CA80D5B7DAE7 /* FunnyButton.API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D84B528121758EFE09A4D1331027EB9 /* FunnyButton.API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,30 +30,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0AD91C7E101DB0969AE0C053DBBC7E52 /* FunnyButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FunnyButton.modulemap; sourceTree = "<group>"; };
-		28B853D235559F6D7F8240B55901D87E /* FunnyButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FunnyButton-Info.plist"; sourceTree = "<group>"; };
-		2D84B528121758EFE09A4D1331027EB9 /* FunnyButton.API.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FunnyButton.API.swift; path = FunnyButton/Classes/FunnyButton.API.swift; sourceTree = "<group>"; };
+		0CAF96741BE5D7F3BA2ECB2556F381FA /* FunnyButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FunnyButton.swift; path = FunnyButton/Classes/FunnyButton.swift; sourceTree = "<group>"; };
+		1E0CF470578A59ACB09D804F24CA9EFD /* FunnyButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FunnyButton.debug.xcconfig; sourceTree = "<group>"; };
+		21C82F25B57596BF7B5EC3C6D4829272 /* FunnyButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FunnyButton.modulemap; sourceTree = "<group>"; };
+		2B79AC8BFBF7EAAD082B7DA6C60330DA /* FunnyButton.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FunnyButton.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		34CEF15F37F4AEE28B7D7E6744C2483B /* Pods-FunnyButton_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FunnyButton_Example-umbrella.h"; sourceTree = "<group>"; };
-		386A960296E22303D8A9C5DE724B5097 /* FunnyButton.Window.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FunnyButton.Window.swift; path = FunnyButton/Classes/FunnyButton.Window.swift; sourceTree = "<group>"; };
-		4777665993F75022F08C6DB5D555437A /* FunnyButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FunnyButton.release.xcconfig; sourceTree = "<group>"; };
+		3F4721AD68E929DA834A8C25BAAC4B0F /* FunnyButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FunnyButton-dummy.m"; sourceTree = "<group>"; };
+		4228F95404AF35999EC3CC66B02B8214 /* FunnyButton+Window.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FunnyButton+Window.swift"; path = "FunnyButton/Classes/FunnyButton+Window.swift"; sourceTree = "<group>"; };
 		479A71394DB665AEF8ADD7DA853FEF5D /* Pods-FunnyButton_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FunnyButton_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		4F59B4B95EC8B466ADE52708451D1A80 /* FunnyButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FunnyButton.swift; path = FunnyButton/Classes/FunnyButton.swift; sourceTree = "<group>"; };
+		4B6980212E1EA3A7DA966FF775A0C68E /* FunnyAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FunnyAction.swift; path = FunnyButton/Classes/FunnyAction.swift; sourceTree = "<group>"; };
+		60A9B4DC8ADD5114F3FC3613C472D7D7 /* FunnyButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FunnyButton-prefix.pch"; sourceTree = "<group>"; };
+		6C3B7220608A5492B19BF6DADFB49FFA /* FunnyButton+API.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FunnyButton+API.swift"; path = "FunnyButton/Classes/FunnyButton+API.swift"; sourceTree = "<group>"; };
 		6E444EC94A39A714BBAA90283F907389 /* FunnyButton */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FunnyButton; path = FunnyButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7AEBE9259F632901EE3212E3A058838C /* FunnyButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FunnyButton-umbrella.h"; sourceTree = "<group>"; };
-		816F94DF05C55ACD6528AAF7897594CF /* FunnyButton.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = FunnyButton.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		85164A800EBB26D803B2F5CEA46EDA6B /* FunnyAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FunnyAction.swift; path = FunnyButton/Classes/FunnyAction.swift; sourceTree = "<group>"; };
-		938ADEA219118885573660E133FDEEF3 /* FunnyButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FunnyButton-dummy.m"; sourceTree = "<group>"; };
+		835739AECFB65B13AC56D99172DD169C /* FunnyButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FunnyButton-Info.plist"; sourceTree = "<group>"; };
 		9432E9D12A942583857CF8FB5617D673 /* Pods-FunnyButton_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FunnyButton_Example.modulemap"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A43A1A7ED1B3E149012B8D179BECA039 /* Pods-FunnyButton_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FunnyButton_Example-frameworks.sh"; sourceTree = "<group>"; };
-		A5A7F167204E1EE968277B0E6DFB0745 /* FunnyButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FunnyButton-prefix.pch"; sourceTree = "<group>"; };
 		A720867D502BFAF0C3603BE043FB4DB4 /* Pods-FunnyButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FunnyButton_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AAF7713FFD0720A41B290B16B5974D2E /* Pods-FunnyButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FunnyButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		ACFB12A57C5B59BD77D674CC469B0F4C /* FunnyButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FunnyButton.release.xcconfig; sourceTree = "<group>"; };
 		B523679268B61ECBB262E4289DB761A5 /* Pods-FunnyButton_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FunnyButton_Example"; path = Pods_FunnyButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC9057D8C3AEB06B570633AE54347C1B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		BDBDD0258E8C82206189E5FCCBCAEF51 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		D83CFA5471A082984A3F6C5416075916 /* FunnyButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FunnyButton.debug.xcconfig; sourceTree = "<group>"; };
+		B9BB8DDD7FD335806013644BA3E94640 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C60B423D80D7BA340E31AD151098339E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		D3509FA29D0ECDC62F49F0AFC7CEE594 /* FunnyButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FunnyButton-umbrella.h"; sourceTree = "<group>"; };
 		DFAABD696232ED61624AA0DA811B9857 /* Pods-FunnyButton_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FunnyButton_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EE79C05E05D19F778475394944C532A9 /* Pods-FunnyButton_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FunnyButton_Example-dummy.m"; sourceTree = "<group>"; };
 		F9B3C927610A3233BD2B6EFA9D0EC8D9 /* Pods-FunnyButton_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FunnyButton_Example-Info.plist"; sourceTree = "<group>"; };
@@ -79,14 +79,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1EB6DF4EA244170EA3A522B682A45E79 /* Pod */ = {
+		34E9FAEC4A7CBB981DC27E6E506622A6 /* FunnyButton */ = {
 			isa = PBXGroup;
 			children = (
-				816F94DF05C55ACD6528AAF7897594CF /* FunnyButton.podspec */,
-				BDBDD0258E8C82206189E5FCCBCAEF51 /* LICENSE */,
-				BC9057D8C3AEB06B570633AE54347C1B /* README.md */,
+				4B6980212E1EA3A7DA966FF775A0C68E /* FunnyAction.swift */,
+				0CAF96741BE5D7F3BA2ECB2556F381FA /* FunnyButton.swift */,
+				6C3B7220608A5492B19BF6DADFB49FFA /* FunnyButton+API.swift */,
+				4228F95404AF35999EC3CC66B02B8214 /* FunnyButton+Window.swift */,
+				CBA06EA91984CC4BC4596C2B5DB74987 /* Pod */,
+				C41FFD9CD2D034CEDBFB440046A184D6 /* Support Files */,
 			);
-			name = Pod;
+			name = FunnyButton;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -123,20 +127,6 @@
 			path = "Target Support Files/Pods-FunnyButton_Example";
 			sourceTree = "<group>";
 		};
-		81DF0EC48148F4A6E2314EFC05474AD8 /* FunnyButton */ = {
-			isa = PBXGroup;
-			children = (
-				2D84B528121758EFE09A4D1331027EB9 /* FunnyButton.API.swift */,
-				4F59B4B95EC8B466ADE52708451D1A80 /* FunnyButton.swift */,
-				386A960296E22303D8A9C5DE724B5097 /* FunnyButton.Window.swift */,
-				85164A800EBB26D803B2F5CEA46EDA6B /* FunnyAction.swift */,
-				1EB6DF4EA244170EA3A522B682A45E79 /* Pod */,
-				88D204C8D50AEFF88D78F54084A0BED2 /* Support Files */,
-			);
-			name = FunnyButton;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		83B387D4A536DACC3C445C4CB6674C52 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,27 +135,37 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		88D204C8D50AEFF88D78F54084A0BED2 /* Support Files */ = {
+		99E5792834657D65EF81B7AFFC552BB2 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0AD91C7E101DB0969AE0C053DBBC7E52 /* FunnyButton.modulemap */,
-				938ADEA219118885573660E133FDEEF3 /* FunnyButton-dummy.m */,
-				28B853D235559F6D7F8240B55901D87E /* FunnyButton-Info.plist */,
-				A5A7F167204E1EE968277B0E6DFB0745 /* FunnyButton-prefix.pch */,
-				7AEBE9259F632901EE3212E3A058838C /* FunnyButton-umbrella.h */,
-				D83CFA5471A082984A3F6C5416075916 /* FunnyButton.debug.xcconfig */,
-				4777665993F75022F08C6DB5D555437A /* FunnyButton.release.xcconfig */,
+				34E9FAEC4A7CBB981DC27E6E506622A6 /* FunnyButton */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		C41FFD9CD2D034CEDBFB440046A184D6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				21C82F25B57596BF7B5EC3C6D4829272 /* FunnyButton.modulemap */,
+				3F4721AD68E929DA834A8C25BAAC4B0F /* FunnyButton-dummy.m */,
+				835739AECFB65B13AC56D99172DD169C /* FunnyButton-Info.plist */,
+				60A9B4DC8ADD5114F3FC3613C472D7D7 /* FunnyButton-prefix.pch */,
+				D3509FA29D0ECDC62F49F0AFC7CEE594 /* FunnyButton-umbrella.h */,
+				1E0CF470578A59ACB09D804F24CA9EFD /* FunnyButton.debug.xcconfig */,
+				ACFB12A57C5B59BD77D674CC469B0F4C /* FunnyButton.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/FunnyButton";
 			sourceTree = "<group>";
 		};
-		99E5792834657D65EF81B7AFFC552BB2 /* Development Pods */ = {
+		CBA06EA91984CC4BC4596C2B5DB74987 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				81DF0EC48148F4A6E2314EFC05474AD8 /* FunnyButton */,
+				2B79AC8BFBF7EAAD082B7DA6C60330DA /* FunnyButton.podspec */,
+				C60B423D80D7BA340E31AD151098339E /* LICENSE */,
+				B9BB8DDD7FD335806013644BA3E94640 /* README.md */,
 			);
-			name = "Development Pods";
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -214,7 +214,7 @@
 			buildConfigurationList = CECE77F9CA6D3A6F09117CE72ACF395F /* Build configuration list for PBXNativeTarget "FunnyButton" */;
 			buildPhases = (
 				F4C62982A0586D6D2FC2C7459F78154A /* Headers */,
-				A770ADE8E177A86310C15ABFA333AA42 /* Sources */,
+				405DE149F9750B3BA6BA780C83B9D512 /* Sources */,
 				BCE625CD229F1F25CDDAC7F4D9EB1527 /* Frameworks */,
 				93322D7349BAAB3D3C7103AB2401C270 /* Resources */,
 			);
@@ -252,8 +252,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -300,15 +300,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A770ADE8E177A86310C15ABFA333AA42 /* Sources */ = {
+		405DE149F9750B3BA6BA780C83B9D512 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B0EE6AD27EEC9783922F8C3F8F17338 /* FunnyAction.swift in Sources */,
-				02E37506E4193511100E310B4C908AB6 /* FunnyButton.swift in Sources */,
-				3D2324438D9433AEF5F348E0CFB7A718 /* FunnyButton-dummy.m in Sources */,
-				F3E1765676001F390103CA80D5B7DAE7 /* FunnyButton.API.swift in Sources */,
-				BC25125B5E273368135CCF22CAB9D600 /* FunnyButton.Window.swift in Sources */,
+				0D3D8777F254DC22FFB99F4905702E48 /* FunnyAction.swift in Sources */,
+				6C443CABA1EACD0DE7E352CA2D6DD581 /* FunnyButton.swift in Sources */,
+				9DF26D082B2EFD8AB0AD895CE64A883F /* FunnyButton+API.swift in Sources */,
+				C31334505876CBFF3011F43ECBE651D9 /* FunnyButton+Window.swift in Sources */,
+				B668501245D08DE20160C784401A3056 /* FunnyButton-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +361,7 @@
 		};
 		4CC3F7A2FEF60480422D8B0FA6942812 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4777665993F75022F08C6DB5D555437A /* FunnyButton.release.xcconfig */;
+			baseConfigurationReference = ACFB12A57C5B59BD77D674CC469B0F4C /* FunnyButton.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -447,7 +447,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -455,7 +456,7 @@
 		};
 		ADBBA88299CD289FDF92BD0B14B2CE76 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D83CFA5471A082984A3F6C5416075916 /* FunnyButton.debug.xcconfig */;
+			baseConfigurationReference = 1E0CF470578A59ACB09D804F24CA9EFD /* FunnyButton.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;

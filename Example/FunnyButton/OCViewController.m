@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"兼容OC";
-    self.view.backgroundColor = UIColor.darkGrayColor;
+    self.view.backgroundColor = UIColor.systemPurpleColor;
     
     Box *box = [[Box alloc] init];
     [self.view addSubview:box];
@@ -31,12 +31,11 @@
     
     [self.box updateSafeFrame];
     
-    [self addFunnyActions:@[
+    [self replaceFunnyActions:@[
         [[FunnyAction alloc] initWithName:@"你好哇！" work:^{
             NSLog(@"我很好。");
         }],
-        
-        [[FunnyAction alloc] initWithName:@"买了iPhone 14 Pro Max了吗？" work:^{
+        [[FunnyAction alloc] initWithName:@"买了iPhone 17 Pro Max了吗？" work:^{
             NSLog(@"没钱买。");
         }],
     ]];
@@ -49,11 +48,6 @@
     [self addFunnyActionWithName:@"查看一下 Box.frame" work:^{
         NSLog(@"box.frame --- %@", NSStringFromCGRect(wSelf.box.frame));
     }];
-}
-
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-    [self removeFunnyActions];
 }
 
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
